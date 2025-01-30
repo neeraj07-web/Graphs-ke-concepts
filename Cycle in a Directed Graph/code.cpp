@@ -2,6 +2,8 @@
 
  class Solution {
   public:
+
+// this code is by using the dfs
   bool isCycleDFS( vector<vector<int>>& adj, int u, vector<bool>& visited, vector<bool>& inRecursion){
       visited[u]=true;
       inRecursion[u]=true;
