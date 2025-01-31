@@ -1,6 +1,8 @@
 class Solution {
 public:
 
+// check for the secoond soluton in the leetcode submission section,  where we have done the code without declaring the self adj list
+
 /// it is given that when adj[i][j] = 1 , then the graph is connected and if it is adj[i][j] = 0 , then it is not connected
     void DFS(unordered_map<int,vector<int>>& adj, int u, vector<bool>& visited) {
         visited[u] = true; // Mark current city as visited
