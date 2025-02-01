@@ -1,10 +1,10 @@
 class Solution {
 public:
     bool DFS(vector<vector<int>>& graph,int curNode, vector<int> &color, int currColor){
-        color[curNode] = currColor;
+        color[curNode] = currColor; // set the color of the curNode with the currColor
 
         for(int &v: graph[curNode]){
-            if(color[v] == color[curNode]) 
+            if(color[v] == color[curNode]) // if tehe color of the v node is same as the cur node then we will return it as false
                return false;
 
            if(color[v] == -1){ // if we have never visited (never colored it before)
